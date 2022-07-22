@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+        <title>Interactive tourism agency</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    
+    </head>
+    <body>
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><spnan>T</spnan>ravel</a> 
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="search here....">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </header>
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="enter your email">
+                <input type="password" class="box" placeholder="enter your password">
+                <input type="submit" value=login now class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password? <a href=#>click here</a></p>
+                <p>don't have an account? <a href=#>register now</a></p>
+            </form>
+        </div>
+
+        <section class="home" id="home">
+            <div class="content">
+                <h3>adventure is worthwhile</h3>
+                <p>discover new places with us</p>
+                <a href="#" class="btn">discover more</a>
+            </div>
+
+            
+            <div class="controls">
+                <span class="vid-btn active" data-src="images/vid-2.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+            </div>
+
+            <div class="video-container">
+                <video src="images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+
+        </section>
+
+
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="space"></span>
+                <span>n</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/book-img.svg" alt="">
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <h3>where to</h3>
+                        <input type="text" placeholder="place name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrivals</h3>
+                        <input type="date">
+                        <div class="inputBox">
+                            <h3>leaving</h3>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                </form>
+
+            </div>
+        </section>
+
+        <section class="packages" id="packages">
+
+            <h1 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/burj-khalifa_1.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> Dubai </h3>
+                        <p>Indulgent, glamorous, and progressive are words that describe Dubai. This United Arab Emirates city is a luxury travel destination for leisure and business travellers.  Dubai combines a modern metropolis with a timeless sensibility and Arabian flair.  It’s a dining, shopping, and nightlife mecca where you can allow your adventurous side to take over and partake in excursions such as desert safaris, hot air balloon rides, and sand boarding.  Enjoy the beaches, spas, waterparks, and famous golf courses.  Whether you’re staring in awe at the Middle Eastern icon: Burj Khalifa, lounging in the world-famous Buddha Bar enjoying late-night drinks, or strolling through the chaotic camel market and interacting with traders, there are so many unique facets of Dubai culture to experience on your next vacation!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/istanbul_2.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> Istanbul </h3>
+                        <p>The old walled city of Istanbul stands on a triangular peninsula between Europe and Asia. Sometimes as a bridge, sometimes as a barrier, Istanbul for more than 2,500 years has stood between conflicting surges of religion, culture, and imperial power. For most of those years it was one of the most coveted cities in the world.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/egypt_3.jpeg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> Egypt </h3>
+                        <p>The land, where the glorious history and the spirited present are intertwined by the world’s longest river – the Nile, is waiting for you to discover it. Open your eyes and listen carefully. A blend of thousands of years of Arab history and famous legacy of the pharaohs await you. By exploring the desert, mysterious temples and large cities, you will see that Egypt is truly a land of contrasts, which has something for every traveller no matter where you go. Read on to find out what travel tips we have in store for you this time.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/paris.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> paris </h3>
+                        <p>Paris, city and capital of France, situated in the north-central part of the country. People were living on the site of the present-day city, located along the Seine River some 233 miles (375 km) upstream from the river’s mouth on the English Channel (La Manche), by about 7600 BCE. The modern city has spread from the island (the Île de la Cité) and far beyond both banks of the Seine.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/tokyo_4.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> tokyo </h3>
+                        <p>Tokyo, the world’s largest metropolis, is known for top-rated restaurants, the Shibuya Crossing, Imperial Palace, cherry blossoms, markets, and more. The shopping scene includes the Harajuku and Akihabara districts. Tokyo is also famous for its vending machines, cat cafes, museums, and sacred sites.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/swiss_alps.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> Swiss Alps </h3>
+                        <p>The Swiss Alps are often characterized as the most spectacular part of the Alps. It's almost needless to say that the Alps are what Switzerland is famous for. ... Nowadays, most tourists do not visit Switzerland for climbing. They enjoy the amazing scenery by hiking, scenic trips, winter sports and sightseeing.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/bali_1.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-market-alt"></i> Bali </h3>
+                        <p>Bali is best known for surfing, beaches, mountainous jungle rainforest, temples, yoga, Hinduism, spirituality, scuba diving, the vibe of the island, and for being a tropical island paradise.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"> $90.00 <span>$120.00</span></div>
+                        <a href="#" class="btn" onclick="audio.play();">book now</a>
+                        <script>
+                            const audio = new Audio();
+                            audio.src = "images/bell.mp3";
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="services" id="services">
+            
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-money-bill-alt"></i>
+                    <h3>affordable</h3>
+                    <p>Not expensive</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>food and drinks</h3>
+                    <p>Included breakfast</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>safety guide</h3>
+                    <p>You are safe</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-globe"></i>
+                    <h3>around the world</h3>
+                    <p>Packages include locations all over the world</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-plane" aria-hidden="true"></i>
+                    <h3>fastest travel</h3>
+                    <p>You can reach to your destination easily</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-volleyball-ball"></i>
+                    <h3>adventures</h3>
+                    <p>A trip that you will never forget</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/g-1.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Islands conjure dreams of paradise: an escape from the rat race and a perfect patch of sand where you can relax under rustling palms and gaze at a serene blue sea.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-2.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Are you a mountain person or a beach bum? If you are in a moral dilemma to choose one over the other perhaps you love both mountains and oceans equally.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-3.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Athena, also spelled Athene, in Greek religion, the city protectress, goddess of war, handicraft, and practical reason, identified by the Romans with Minerva.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-4.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Chinese gardens blend unique architectures with natural elements.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-5.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>The tower is situated behind the Pisa Cathedral and is the third-oldest structure in the city's Cathedral Square (Piazza del Duomo), after the cathedral and the Pisa Baptistry.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-6.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lagos is an ancient marine town, whose history stretches back more than 2000 years.
+                            It was occupied by the Phoenicians, Romans, Visigoths, Byzantines and Moors.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-7.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Cappadocia is a land famous for its distinctive rock formation, historical heritage, and scenic hot air balloon trips.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-8.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>You can’t talk about camping without waxing lyrical about New Zealand’s out-of-this-world landscapes. Mount Cook (or Aoraki to the Maori) is the country’s highest mountain.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-9.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>The pyramids were built as burial places and monuments to the Pharaohs. As part of their religion, the Egyptians believed that the Pharaoh needed certain things to succeed in the afterlife.</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="review" id="review">
+
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </h1>    
+
+            <div class=" swiper-container review-slider">
+                <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                       <div class="box">
+                          <img src="images/img_1.jpg" alt="">
+                          <h3>Tania</h3>
+                          <p>It was a great experience</p>
+                          <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="far fa-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                      <div class="box">
+                          <img src="images/img_3.jpg" alt="">
+                          <h3>Michael</h3>
+                          <p>Absolutely amazing</p>
+                          <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                           <img src="images/img_8.jpg" alt="">
+                           <h3>Su</h3>
+                           <p>Fantastic</p>
+                           <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="box">
+                           <img src="images/pic4.png" alt="">
+                           <h3>Raul</h3>
+                           <p>Amazing</p>
+                           <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class=" contact" id="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+               </h1>
+
+               <div class="row">
+                  <div class="image">
+                     <img src="images/contact-img.svg" alt="">
+                  </div>
+ 
+                  <form action="">
+                      <div class="inputBox">
+                          <input type="text" placeholder="name">
+                          <input type="email" placeholder="email">
+                      </div>
+                      <div class="inputBox">
+                          <input type="number" placeholder="number">
+                          <input type="text" placeholder="subject">
+                      </div>
+                      <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                      <input type="submit" class="btn" value="send message" onclick="funs()"">
+                        <script>
+                            function funs(){
+                                alert("Are you sure?");
+                            }
+                        </script>       
+                  </form>
+               </div>
+        </section>
+
+        <section class="location">
+
+            <h1 class="heading">
+                <span>l</span>
+                <span>o</span>
+                <span>c</span>
+                <span>a</span>
+                <span>t</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>
+            </h1> 
+            
+            <div id="map"></div>
+            <div class="toolbar">
+                 <button id="computeRoute">Compute route</button>
+            </div>
+
+        </section>
+
+        <section class="brand-container">
+            <dviv class="swiper-container brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+                </div>
+            </dviv>
+        </section>
+
+        <secton class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>Description</p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">book</a>
+                    <a href="#">packages</a>
+                    <a href="#">services</a>
+                    <a href="#">gallery</a>
+                    <a href="#">review</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+            </div>
+
+        </secton>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <script src="scripts/script.js" type="text/javascript"></script>
+    </body>
+</html>
